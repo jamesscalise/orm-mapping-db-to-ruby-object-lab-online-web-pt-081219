@@ -88,7 +88,7 @@ class Student
     SQL
     
     
-    #DB[:conn].execute(sql)#.map do |row|
+    #DB[:conn].execute(sql).map do |row|
       self.new_from_db(DB[:conn].execute(sql))
    # end
   end
