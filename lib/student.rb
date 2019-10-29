@@ -43,9 +43,13 @@ class Student
       WHERE grade = "9th"
     SQL
     
+    students = []
+    
     DB[:conn].execute(sql).map do |row|
-      self.new_from_db(row)
+      students << self.new_from_db(row)
     end
+    
+    students
   end
   
   def self.students_blow_12th_grade
