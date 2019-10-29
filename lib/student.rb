@@ -71,7 +71,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 10
-      ORDER BY id ASC
+      ORDER BY students.id ASC
       LIMIT 1
     SQL
     
