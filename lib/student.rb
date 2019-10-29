@@ -69,7 +69,7 @@ class Student
       FROM students
       WHERE grade = 10
       ORDER BY students.id ASC
-      LIMIT 1
+      LIMIT ?
     SQL
     
     
